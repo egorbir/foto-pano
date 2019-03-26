@@ -1,0 +1,86 @@
+body, html {
+    font-family: "Raleway Medium", sans-serif;
+    color: #983b45;
+}
+
+/* ПАНЕЛЬ НАВИГАЦИИ */
+
+#navigation {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar-brand img {
+    margin-right: 25px;
+}
+
+.descriptor {
+    width: 200px;
+    font-size: 18px;
+    color: #983b45;
+    line-height: 20px;
+}
+
+.descriptor:hover {
+    text-decoration: none;
+    color: #63131C!important;
+}
+
+#navbarNav {
+    height: 50px;
+}
+
+.navbar-nav {
+    height: 100%;
+}
+
+.nav-item {
+    width: 173px;
+    text-align: center;
+}
+
+.nav-item a {
+    height: 100%;
+    font-size: 18px;
+    color: #983b45 !important;
+    line-height: 20px;
+    padding: 15px 0;
+}
+
+.nav-item a:hover {
+    color: #ffffff !important;
+    background-color: #983b45;
+}
+
+.nav-item a:active {
+    color: #ffffff !important;
+    background-color: #cc6e79;
+
+}
+
+/* КАРУСЕЛЬ ФОНОВЫХ ИЗОБРАЖЕНИЙ */
+
+.carousel {
+    position: relative;
+}
+
+.carousel-item img {
+    height: 450px;
+}
+
+.display-1 {
+    width: 593px;
+    font-family: "Raleway Medium", sans-serif;
+    color: #3b3b3b;
+    font-size: 36px;
+    line-height: 48px;
+    position: absolute;
+    top: 185px;
+    z-index: 1;
+}
+
+/* ПРЕВЬЮ КАРТОЧКИ */
+
+.card {
+    padding: 5px;
+}
