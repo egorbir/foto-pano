@@ -11,19 +11,19 @@ body, html {
 }
 
 .navbar-brand img {
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
 .descriptor {
-    width: 200px;
-    font-size: 18px;
-    color: #983b45;
+    width: 250px;
+    font-size: 16px;
+    color: #983b45 !important;
     line-height: 20px;
 }
 
 .descriptor:hover {
     text-decoration: none;
-    color: #63131C!important;
+    color: #63131C !important;
 }
 
 #navbarNav {
@@ -41,7 +41,7 @@ body, html {
 
 .nav-item a {
     height: 100%;
-    font-size: 18px;
+    font-size: 16px;
     color: #983b45 !important;
     line-height: 20px;
     padding: 15px 0;
@@ -64,23 +64,45 @@ body, html {
     position: relative;
 }
 
-.carousel-item img {
-    height: 450px;
-}
-
-.display-1 {
-    width: 593px;
+.header-text {
     font-family: "Raleway Medium", sans-serif;
     color: #3b3b3b;
+    position: absolute;
+    z-index: 2;
+}
+
+#lg {
+    width: 593px;
     font-size: 36px;
     line-height: 48px;
-    position: absolute;
-    top: 185px;
-    z-index: 1;
+    padding-top: 50px;
+}
+
+#md {
+    width: 400px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 50px;
+}
+
+#sm {
+    width: 350px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 50px;
+}
+
+#xs {
+    width: 250px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 25px;
 }
 
 /* ПРЕВЬЮ КАРТОЧКИ */
 
 .card {
+    max-width: 15rem;
+    min-width: 15rem;
     padding: 5px;
 }
