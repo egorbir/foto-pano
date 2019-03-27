@@ -26,10 +26,6 @@ body, html {
     color: #63131C !important;
 }
 
-#navbarNav {
-    height: 50px;
-}
-
 .navbar-nav {
     height: 100%;
 }
@@ -75,7 +71,7 @@ body, html {
     width: 593px;
     font-size: 36px;
     line-height: 48px;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 #md {
