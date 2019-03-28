@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+<!--
 
 <header>
 
@@ -72,6 +73,7 @@
     </div>
 
 </header>
+-->
 
 <main>
 
@@ -105,6 +107,40 @@
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                         to </p>
                 </div>
+            </div>
+            <div class="goto">
+
+                <h6 id="country">Страна</h6>
+         <!--       <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="choose-country" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        Выберете страну
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>-->
+                <select name="country" id="countries" class="select-country" onchange="showNames(this.value)" >
+                    <option value="hide">Выберете страну</option>
+                    <option value="ru">Россия</option>
+                    <option value="gr">Греция</option>
+                    <option value="bol">Болгария</option>
+                    <option value="chern">Черногория</option>
+                    <option value="bel">Белорусь</option>
+                    <option value="ua">Украина</option>
+                    <option value="viet">Вьетнам</option>
+                </select>
+
+                <h6 id="place">Место</h6>
+
+                <select name="place" id="places" class="select-place">
+                    <option value="hide">Выберете место</option>
+                </select>
+
+                <input type="button" id="go" value="Перейти к панорамам!">
+
             </div>
         </div>
         <div class="row">
@@ -559,8 +595,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Болгария, Несебыр -->
 
     <div class="container">
-        <h2 class="sub-header">Болгария</h2>
-        <h3>Несебыр</h3>
+        <h3 class="sub-category">Несебыр</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -784,5 +819,6 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 <script src="packages/bootstrap/js/bootstrap.min.js"></script>
+<script src="packages/bootstrap/js/main.js"></script>
 </body>
 </html>

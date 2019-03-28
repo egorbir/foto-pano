@@ -109,14 +109,6 @@ h3 {
 
 /* ПРЕВЬЮ КАРТОЧКИ */
 
-.sub-category {
-    margin-top: 70px;
-}
-
-.sub-header {
-    margin-top: 80px;
-}
-
 .card {
     background-color: #983b45;
     color: white;
@@ -146,3 +138,75 @@ h3 {
 
 /* ВТОРОСТЕПЕННЫЕ ЗАГОЛОВКИ */
 
+.sub-category {
+    margin-top: 70px;
+}
+
+.sub-header {
+    margin-top: 80px;
+}
+
+/* БЛОК G0-T0 */
+
+.goto {
+    width: 200px;
+    height: 270px;
+    border: 2px solid #983b45;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.goto h6 {
+    text-align: center;
+}
+
+#country {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#place {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+select{
+    height: 35px;
+    width: 160px;
+    background-color: #983b45;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 1000px;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+select:hover {
+    color: #e3e3e3;
+}
+
+select option {
+    background: white;
+    color: #983b45;
+}
+
+.select-country {
+    margin: 10px 18px 0 18px;
+}
+
+.select-place {
+    margin: 10px 18px 0 18px ;
+}
+
+#go {
+    height: 40px;
+    font-family: "Raleway Bold", sans-serif;
+    color: #ffffff;
+    background-color: #983b45;
+    font-size: 14px;
+    margin: 35px 18px 0 19px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
