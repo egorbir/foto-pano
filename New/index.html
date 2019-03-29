@@ -11,7 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-<!--
 
 <header>
 
@@ -73,7 +72,7 @@
     </div>
 
 </header>
--->
+
 
 <main>
 
@@ -111,35 +110,26 @@
             <div class="goto">
 
                 <h6 id="country">Страна</h6>
-         <!--       <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="choose-country" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        Выберете страну
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>-->
-                <select name="country" id="countries" class="select-country" onchange="showNames(this.value)" >
+                <select name="country" id="countries" class="select-country" onchange="showNames(this.value)">
                     <option value="hide">Выберете страну</option>
-                    <option value="ru">Россия</option>
-                    <option value="gr">Греция</option>
-                    <option value="bol">Болгария</option>
-                    <option value="chern">Черногория</option>
-                    <option value="bel">Белорусь</option>
-                    <option value="ua">Украина</option>
-                    <option value="viet">Вьетнам</option>
+                    <option data-name="ruId" value="ru">Россия</option>
+                    <option data-name="grId" value="gr">Греция</option>
+                    <option data-name="bolId" value="bol">Болгария</option>
+                    <option data-name="cherId" value="chern">Черногория</option>
+                    <option data-name="belId" value="bel">Белорусь</option>
+                    <option data-name="uaId" value="ua">Украина</option>
+                    <option data-name="vietId" value="viet">Вьетнам</option>
                 </select>
 
                 <h6 id="place">Место</h6>
 
-                <select name="place" id="places" class="select-place">
+                <select name="place" id="places" class="select-place"">
                     <option value="hide">Выберете место</option>
                 </select>
 
-                <input type="button" id="go" value="Перейти к панорамам!">
+                <div class="link">
+                    <a href="#" id="go" onclick="go()">Перейти к панорамам!</a>
+                </div>
 
             </div>
         </div>
@@ -227,7 +217,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Астраханская обл -->
 
     <div class="container">
-        <h3 class="sub-category">Астраханская область</h3>
+        <h3 class="sub-category" id="astr">Астраханская область</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -251,7 +241,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Краснодарский край -->
 
     <div class="container">
-        <h3 class="sub-category">Краснодарский край</h3>
+        <h3 class="sub-category" id="kras">Краснодарский край</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -283,7 +273,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Великие Луки -->
 
     <div class="container">
-        <h3 class="sub-category">Город Великие Луки</h3>
+        <h3 class="sub-category" id="luki">Город Великие Луки</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -315,7 +305,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Мышкин -->
 
     <div class="container">
-        <h3 class="sub-category">Город Мышкин</h3>
+        <h3 class="sub-category" id="mysh">Город Мышкин</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -347,7 +337,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Карелия -->
 
     <div class="container">
-        <h3 class="sub-category">Республика Карелия</h3>
+        <h3 class="sub-category" id="karel">Республика Карелия</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -427,7 +417,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Тверская обл -->
 
     <div class="container">
-        <h3 class="sub-category">Тверская область</h3>
+        <h3 class="sub-category" id="tver">Тверская область</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -459,7 +449,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Феропантов монастырь -->
 
     <div class="container">
-        <h3 class="sub-category">Феропантов монастырь</h3>
+        <h3 class="sub-category" id="feropant">Феропантов монастырь</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -475,7 +465,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Вытегра -->
 
     <div class="container">
-        <h3 class="sub-category">Вытегра</h3>
+        <h3 class="sub-category" id="vytegr">Вытегра</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -497,7 +487,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Греция, Крит -->
 
     <div class="container">
-        <h2 class="sub-header">Греция</h2>
+        <h2 class="sub-header" id="krit">Греция</h2>
         <h3>Остров Крит</h3>
         <div class="row">
             <div class="card">
@@ -554,7 +544,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Болгария, Свети-Влас -->
 
     <div class="container">
-        <h2 class="sub-header">Болгария</h2>
+        <h2 class="sub-header" id="svet">Болгария</h2>
         <h3>Свети-Влас</h3>
         <div class="row">
             <div class="card">
@@ -595,7 +585,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Болгария, Несебыр -->
 
     <div class="container">
-        <h3 class="sub-category">Несебыр</h3>
+        <h3 class="sub-category" id="neseb">Несебыр</h3>
         <div class="row">
             <div class="card">
                 <img src="img/preview/p1.jpg" alt="" class="card-img-top rounded">
@@ -635,7 +625,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Черногория, Герцен-Нови -->
 
     <div class="container">
-        <h2 class="sub-header">Черногория</h2>
+        <h2 class="sub-header" id="gerts">Черногория</h2>
         <h3>Герцен-Нови</h3>
         <div class="row">
             <div class="card">
@@ -652,7 +642,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Белорусь, Курган Славы -->
 
     <div class="container">
-        <h2 class="sub-header">Белорусь</h2>
+        <h2 class="sub-header" id="kurgan">Белорусь</h2>
         <h3>Курган Славы</h3>
         <div class="row">
             <div class="card">
@@ -677,7 +667,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Украина, Музей народной архитектуры -->
 
     <div class="container">
-        <h2 class="sub-header">Украина</h2>
+        <h2 class="sub-header" id="muzey">Украина</h2>
         <h3>Музей народной архитектуры и быта</h3>
         <div class="row">
             <div class="card">
@@ -766,7 +756,7 @@
     <!-- КОНТЕЙНЕР С ПРЕВЬЮ КАРТОЧКАМИ Вьетнам, Курорт Муйне -->
 
     <div class="container">
-        <h2 class="sub-header">Вьетнам</h2>
+        <h2 class="sub-header" id="kurort">Вьетнам</h2>
         <h3>Курорт Муйне</h3>
         <div class="row">
             <div class="card">

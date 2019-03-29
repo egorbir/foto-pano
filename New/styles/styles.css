@@ -1,6 +1,7 @@
 body, html {
     font-family: "Raleway Medium", sans-serif;
     color: #983b45;
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -199,14 +200,19 @@ select option {
     margin: 10px 18px 0 18px ;
 }
 
-#go {
+.link {
     height: 40px;
-    font-family: "Raleway Bold", sans-serif;
-    color: #ffffff;
     background-color: #983b45;
-    font-size: 14px;
     margin: 35px 18px 0 19px;
     border-radius: 10px;
-    outline: none;
-    border: none;
+}
+
+.link a {
+    display: block;
+    text-align: center;
+    height: 100%;
+    font-size: 14px;
+    line-height: 36px;
+    color: #ffffff;
+    text-decoration: none;
 }
